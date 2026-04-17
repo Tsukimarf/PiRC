@@ -1,7 +1,7 @@
 {
   "document": {
     "title": "PiRC - Section 4: Allocation Period (Design Option 2)",
-    "source": "https://github.com/Tsukimarf/PiRC/blob/Tsukimarf-patch-1/PiRC1/4-allocation/4-allocation%20design%202.md",
+    "source": "https://github.com/PiRC/blob/Tsukimarf-patch-1/PiRC1/4-allocation/4-allocation%20design%202.md",
     "next_section": "5-tge-state design 2.md",
     "design_option": 2,
     "description": "LP formation using both deposit and swap operations"
