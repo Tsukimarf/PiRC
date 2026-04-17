@@ -299,6 +299,10 @@ export class PiRC1Engine {
     });
 
     let result;
+    if (!PIRC1_CONFIG.ALLOCATION_DESIGNS.includes(allocationDesign)) {
+      throw new Error(`Invalid allocation design: ${allocationDesign}`);
+    }
+
     if (allocationDesign === "design1") {
       result = this.allocateDesign1({ participants: enriched, tAvailable, totalPiCommitted: totalPi, projectLiquidityTokens: lpTokens });
     } else {
