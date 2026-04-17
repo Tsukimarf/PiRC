@@ -187,13 +187,14 @@ class PiRCAllocationCalculator {
     const halfC = this.C / 2;
     return Array.from({ length: n }, (_, i) => {
       const s = (i / (n - 1)) * halfC;
+      const pEff = this.pEff(s);
       return {
         s,
         sFraction:    s / halfC,
         pSwap:        this.pSwap(s),
         pSwapNorm:    this.pSwapNorm(s),
-        pEff:         this.pEff(s),
-        pEffNorm:     this.pEff(s) / this.p_list,
+        pEff:         pEff,
+        pEffNorm:     pEff / this.p_list,
         discount:     this.discountPercent(s),
       };
     });
