@@ -103,7 +103,9 @@ class PiRCAllocationCalculator {
    * @param {number} C - Total Pi committed by all participants
    */
   constructor(T, C) {
-    if (T <= 0 || C <= 0) throw new Error("T and C must be positive numbers.");
+    if (!Number.isFinite(T) || !Number.isFinite(C) || T <= 0 || C <= 0) {
+      throw new Error("T and C must be finite positive numbers.");
+    }
     this.T = T;
     this.C = C;
 
