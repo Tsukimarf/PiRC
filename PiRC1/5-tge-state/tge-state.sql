@@ -115,7 +115,7 @@ INSERT INTO price_analysis (analysis_id, launch_id, k_invariant, t_out, y_min, x
     16.00, '2026-01-22T00:10:00Z');
 
 INSERT INTO swap_event (event_id, launch_id, chain, tx_hash, direction, amount_in, amount_out, pool_pi_reserve_after, pool_token_reserve_after, block_time) VALUES
-('SWAP-D1-0001', 'PIRC-D1-0001', 'pi-network-soroban', 'd1demo0000000000000000000000000000000000000000000001', 'token_to_pi', 10000, 9803.9, 990196.1, 1010000.0, '2026-01-16T09:00:00Z'),
+('SWAP-D1-0001', 'PIRC-D1-0001', 'pi-network-soroban', 'd1demo0000000000000000000000000000000000000000000001', 'token_to_pi', 10000, 9900.99009901, 990099.00990099, 1010000.0, '2026-01-16T09:00:00Z'),
 ('SWAP-D2-0001', 'PIRC-D2-0001', 'pi-network-soroban', 'd2demo0000000000000000000000000000000000000000000001', 'pi_to_token', 5000,  1976.3, 1005000.0, 398023.7, '2026-01-23T09:00:00Z');
 
 -- =============================================================================
