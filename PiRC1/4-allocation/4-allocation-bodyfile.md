@@ -74,7 +74,7 @@ t_i^{engage} =
 \end{cases}
 $$
 
-**Theorem 2.3.1** (Tier Bonus Bound): If commitments are uniform within each tier, the token bonus over base allocation is bounded by:
+**Theorem 2.3.1** (Tier Bonus): If each tier holds exactly one-third of total commitment (for example, all participants commit equally), the token bonus over base allocation is:
 
 $$
 b_{top} = \frac{2/3 \cdot 0.05}{1/3} = 10\%, \qquad
