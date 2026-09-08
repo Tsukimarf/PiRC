@@ -122,7 +122,7 @@ db.createCollection("swap_event", {
 db.launch_config.createIndex({ launch_id: 1 }, { unique: true });
 db.escrow_wallet.createIndex({ wallet_id: 1 }, { unique: true });
 db.escrow_wallet.createIndex({ launch_id: 1 });
-db.lp_state_snapshot.createIndex({ launch_id: 1, step_label: 1 });
+db.lp_state_snapshot.createIndex({ launch_id: 1, step_label: 1 }, { unique: true });
 db.price_analysis.createIndex({ launch_id: 1 }, { unique: true });
 db.swap_event.createIndex({ launch_id: 1, block_time: 1 });
 db.swap_event.createIndex({ tx_hash: 1 }, { unique: true });
