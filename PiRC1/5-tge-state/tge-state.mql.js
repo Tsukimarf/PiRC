@@ -375,7 +375,7 @@ function recomputePriceFloor() {
 function rolloutTimeline(launchId) {
   return db.lp_state_snapshot.aggregate([
     { $match: { launch_id: launchId } },
-    { $sort: { recorded_at: 1 } },
+    { $sort: { recorded_at: 1, step_label: 1 } },
     {
       $project: {
         _id: 0,
