@@ -23,7 +23,7 @@ where $x$ is the Pi reserve, $y$ is the token reserve, and $k$ is preserved acro
 
 ### 1.3 Effective Price as a Weighted Harmonic Mean
 
-A recurring construction in both designs is that a participant's **effective acquisition price** across two Pi-denominated buckets of equal size is the **harmonic mean** of the two bucket prices:
+For Design 2, a participant's **effective acquisition price** across the two equal-Pi buckets is the **harmonic mean** of the two bucket prices; Design 1 instead adds a token bonus to its base allocation.
 
 $$
 p_{eff} = \frac{2\,p_1\,p_2}{p_1 + p_2}
