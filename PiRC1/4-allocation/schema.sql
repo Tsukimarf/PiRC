@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS bodyfail_events (
 
     direction_failed     VARCHAR(8)   NOT NULL CHECK (direction_failed IN ('bullish','bearish')),
     trigger_body_ratio    NUMERIC(6,5) NOT NULL,
-    retracement_ratio     NUMERIC(6,5),           -- how far price gave back, 0..1+
+    retracement_ratio     NUMERIC(10,5),           -- how far price gave back, 0..1+
     confidence            NUMERIC(6,5) NOT NULL,  -- 0..1 composite score
     status                VARCHAR(12)  NOT NULL DEFAULT 'pending'
                              CHECK (status IN ('pending','confirmed','invalidated')),
