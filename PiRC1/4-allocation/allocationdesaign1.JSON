@@ -124,7 +124,7 @@
       "latex": "t_i^{base} = \\frac{c_i}{p_{list}}"
     },
     "effective_price": {
-      "formula": "p_eff_i = c_i / (t_i_base + t_i_discount)",
+"formula": "p_eff_i = c_i / (t_i_base + t_i_engage)",
       "latex": "p_{eff,i} = \\frac{c_i}{t_i^{base} + t_i^{discount}}"
     },
     "tier_bonus": {
