@@ -370,7 +370,7 @@ function computeDesign2SwapCurve(launchId) {
  *     locked (the "no team can drain liquidity" invariant, shared with 5-tge-state).
  */
 function unlockedEscrowAudit() {
-  return db.escrow_wallet.find({ permanently_locked: false }).toArray();
+  return db.escrow_wallet.find({ permanently_locked: { $ne: true } }).toArray();
 }
 
 // Demo run (comment out in production import scripts):
