@@ -321,7 +321,7 @@ function computeDesign2SwapCurve(launchId) {
         "s": {
           $multiply: [
             "$half_C",
-            { $divide: ["$idx", { $subtract: ["$n", 1] }] }
+            { $cond: [{ $gt: ["$n", 1] }, { $divide: ["$idx", { $subtract: ["$n", 1] }] }, 0] }
           ]
         }
       }
