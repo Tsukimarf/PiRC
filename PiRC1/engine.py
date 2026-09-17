@@ -368,7 +368,7 @@ class PiRC1Engine:
                 "lock_up_months":   lock_up_months,
             })
 
-        lp = self._form_lp(total_pi_committed, project_liquidity_tokens)
+        lp = self._form_lp(total_pi_committed / 2, t_available * 0.80)
         return {"design": "design2", "allocations": allocations, "liquidity_pool": lp}
 
     # ── Liquidity Pool Formation ─────────────
