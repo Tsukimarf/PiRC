@@ -168,7 +168,7 @@
     "y_axis_label": "Price (Pi/token) [as multiple of p_list]",
     "data_points": [
       { "s_fraction": 0.0, "p_eff_normalized": 0.400 },
-      { "s_fraction": 0.1, "p_eff_normalized": 0.465 },
+      { "s_fraction": 0.1, "p_eff_normalized": 0.464 },
       { "s_fraction": 0.2, "p_eff_normalized": 0.529 },
       { "s_fraction": 0.3, "p_eff_normalized": 0.594 },
       { "s_fraction": 0.4, "p_eff_normalized": 0.658 },
